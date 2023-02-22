@@ -1,0 +1,16 @@
+
+.counter{
+    display: flex;
+    flex-direction: column;
+}
+
+.controller{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.number{
+    margin-left: 10px;
+    margin-right: 10px;
+}
