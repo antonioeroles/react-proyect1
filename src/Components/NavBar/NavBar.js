@@ -8,7 +8,7 @@ const NavBar = () => {
         <div>
             <ul className='options'>
                 <li>Vinos</li>
-                <li>Licores</li>
+                <li>Aperitivos</li>
                 <li>Espumantes</li>
             </ul>
         </div>
