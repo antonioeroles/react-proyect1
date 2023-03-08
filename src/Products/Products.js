@@ -1,5 +1,5 @@
 
-const productos = [
+const vinoteca = [
     {
         id: 1,
         title: "Alma Mora",
@@ -132,4 +132,4 @@ const productos = [
 
     }
 ]
-export default Products
+export default vinoteca

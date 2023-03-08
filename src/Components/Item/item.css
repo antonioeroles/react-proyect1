@@ -1,0 +1,15 @@
+.item-card {
+  list-style: none;
+  text-align: center;
+  margin: 50 px;
+  padding: 50 px;
+}
+  .item-card > img {
+    width: 300 px;
+    height: 500 px;
+  }
+  .item-card:hover{
+    cursor: pointer;
+    box-shadow: 0px 6px 5px #dedede;
+    transform: translateY(-5px);
+  }
