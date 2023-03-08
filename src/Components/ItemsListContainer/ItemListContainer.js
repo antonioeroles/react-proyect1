@@ -19,16 +19,22 @@ const ItemListContainer = () => {
   useEffect(() =>{
     let getProducts = ItemsDatabase();
     getProducts.then ((response) =>{
-       setProducts(response);
+      if (category) {
+        setProducts (response.filter((product) =>product.category === category))
+      }
+      else {
+        setProducts(response);
+      }
+      
     })
     .catch ((error) =>{
        console.log(error);})
-  },[]);
+  },[category]);
 
-  useEffect(() =>{
+ /* useEffect(() =>{
     const FilterProducts = products.filter((product) => product.category === category);
     setProducts(FilterProducts)
-  }, [category]);
+  }, [category]);*/
 
    
     return (

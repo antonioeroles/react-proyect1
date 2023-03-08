@@ -1,11 +1,11 @@
-
+import "./ItemDetail.css"
 
 const ItemDetail = ({producto}) => {
   return (
     <div>
-        <ul>
-            <li key={producto.id}>
-                <img alt={producto.title} src={producto.image}/>
+        <ul className="item-lista">
+            <li key={producto.id} className= "item-card">
+                <img alt={producto.title} src={producto.image} className="cardImagen"/>
                 <h2>{producto.title}</h2>
                 <h3>{producto.description}</h3>
                 <h3> $ {producto.price}</h3>
